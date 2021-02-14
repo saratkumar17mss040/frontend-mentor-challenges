@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem;
+	background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	z-index: -1;
+}
+
+:root {
+	font-size: 12px;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.desktop-imgs {
+	display: none;
+}
+
+.vector-img {
+	position: relative;
+}
+
+.img-center {
+	display: block;
+	margin: 0 auto;
+}
+
+.bg-pattern {
+	position: absolute;
+	left: 31px;
+	top: 110px;
+	z-index: 0;
+}
+
+.faq {
+	padding-top: 0.25rem;
+	background-color: #ffffff;
+	box-shadow: 5px 12px 36px #4e2e85;
+	margin-top: -90px;
+	border-radius: 1.5rem;
+	padding-bottom: 3rem;
+	margin-left: 1.5rem;
+	z-index: -2;
+	-webkit-border-radius: 1.5rem;
+	-moz-border-radius: 1.5rem;
+	-ms-border-radius: 1.5rem;
+	-o-border-radius: 1.5rem;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 11rem;
+	margin-bottom: 1rem;
+}
+
+.question {
+	margin: 0.2rem;
+	padding: 1rem;
+}
+
+.question > span:first-child:hover {
+	cursor: pointer;
+	color: hsl(14, 88%, 65%);
+}
+
+.q {
+	cursor: pointer;
+}
+
+.question > span::after {
+	content: url('./images/icon-arrow-down.svg');
+	float: right;
+}
+
+hr {
+	opacity: 0.2;
+	margin-top: 1rem;
+}
+
+p {
+	margin-top: 1rem;
+	width: 18rem;
+	color: hsl(240, 6%, 50%);
+	line-height: 1.5;
+	display: block;
+}
+
+.bold-active {
+	font-weight: bold;
+}
+
+.active {
+	display: block;
+}
+
+.answer {
+	display: none;
+}
+
+@media screen and (min-width: 935px) {
+	.woman-online {
+		display: none;
+	}
+
+	.bg-pattern {
+		display: none;
+	}
+
+	.desktop-imgs {
+		display: block;
+		position: relative;
+	}
+
+	.faq {
+		display: flex;
+		padding-right: 3rem;
+	}
+
+	.desktop-box {
+		position: absolute;
+		top: 144px;
+		left: -90px;
+		z-index: 2;
+	}
+
+	.desktop-main-img {
+		position: relative;
+		left: -70px;
+		top: 29px;
+	}
+
+	.desktop-shadow {
+		position: absolute;
+		width: 600px;
+		left: -141px;
+		top: -78px;
+	}
+
+	.desktop-faq {
+		text-align: left;
+		padding: 0 3rem;
+		width: 406px;
+	}
+
+	h1 {
+		text-align: left;
+		padding-left: 1.2rem;
+	}
+}
