@@ -57,8 +57,6 @@ body {
 .rate-card {
 	margin: 1.2rem;
 	padding: 1rem;
-	padding-left: 2.7rem;
-	padding-right: 2.7rem;
 	background-color: var(--light-grayish-magenta);
 	border-radius: 1rem;
 	-webkit-border-radius: 1rem;
@@ -132,7 +130,7 @@ body {
 	color: var(--dark-grayish-magenta);
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 912px) {
 	.flex-one {
 		flex-direction: row;
 	}
@@ -173,11 +171,17 @@ body {
 
 	.flex-two {
 		flex-flow: row nowrap;
+		margin-left: 8rem;
+		margin-right: 8rem;
 	}
 
 	.flex-two > div {
 		max-height: 50%;
 		margin-top: 4rem;
+	}
+
+	.review-card {
+		max-width: 350px;
 	}
 
 	.review-card.review-card-1 {
