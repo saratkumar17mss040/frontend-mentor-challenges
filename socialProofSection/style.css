@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: hsl(300, 43%, 22%);
+	--secondary-color: hsl(333, 80%, 67%);
+	--dark-grayish-magenta: hsl(333, 80%, 67%);
+	--light-grayish-magenta: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+	font-family: 'Spartan', sans-serif;
+}
+
+body {
+	font-size: 0.9rem;
+	background: url('./images/bg-pattern-top-mobile.svg') left top,
+		url('./images/bg-pattern-bottom-mobile.svg') right bottom;
+	background-repeat: no-repeat, no-repeat;
+}
+
+.flex-one {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	padding-top: 3.5rem;
+}
+
+.flex-one > div {
+	text-align: center;
+}
+
+.heading {
+	font-weight: 700;
+	font-size: 2.7rem;
+	color: var(--primary-color);
+	margin: 2rem;
+}
+
+.heading-content {
+	margin: 2.2rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	color: rgb(119, 114, 114);
+}
+
+.rate-card {
+	margin: 1.2rem;
+	padding: 1rem;
+	padding-left: 2.7rem;
+	padding-right: 2.7rem;
+	background-color: var(--light-grayish-magenta);
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+
+.rate-card-text {
+	margin-top: 0.5rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.flex-two {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column nowrap;
+}
+
+.review-card {
+	background-color: var(--primary-color);
+	margin: 1.2rem;
+	border-radius: 0.8rem;
+	-webkit-border-radius: 0.8rem;
+	-moz-border-radius: 0.8rem;
+	-ms-border-radius: 0.8rem;
+	-o-border-radius: 0.8rem;
+}
+
+.profile {
+	display: flex;
+	flex-flow: row nowrap;
+	padding-top: 1rem;
+}
+
+.profile-img {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	width: 64px;
+	border-radius: 4rem;
+	-webkit-border-radius: 4rem;
+	-moz-border-radius: 4rem;
+	-ms-border-radius: 4rem;
+	-o-border-radius: 4rem;
+}
+
+.profile > div {
+	justify-content: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.review-text {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	color: var(--white);
+	line-height: 1.7;
+	padding-bottom: 1rem;
+}
+
+.name {
+	color: var(--white);
+	font-weight: 500;
+	line-height: 2.2rem;
+}
+
+.verification {
+	color: var(--dark-grayish-magenta);
+}
+
+@media all and (min-width: 800px) {
+	.flex-one {
+		flex-direction: row;
+	}
+
+	.flex-one-item1 {
+		max-width: 500px;
+	}
+
+	.rate-card-text {
+		display: inline;
+	}
+
+	.flex-one > div {
+		text-align: left;
+	}
+
+	.flex-two {
+		margin-top: 2rem;
+	}
+
+	.rating {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.card-1 {
+		margin-left: 5em;
+	}
+
+	.card-2 {
+		margin-left: 10em;
+	}
+
+	.card-3 {
+		margin-left: 15em;
+	}
+
+	.flex-two {
+		flex-flow: row nowrap;
+	}
+
+	.flex-two > div {
+		max-height: 50%;
+		margin-top: 4rem;
+	}
+
+	.review-card.review-card-1 {
+		margin-top: -78px;
+	}
+	.review-card.review-card-2 {
+		margin-top: 36px;
+	}
+
+	.review-card.review-card-3 {
+		margin-top: 110px;
+	}
+
+	body {
+		font-size: 0.9rem;
+		background-image: url('./images/bg-pattern-top-desktop.svg'),
+			url('./images/bg-pattern-bottom-desktop.svg');
+		background-position: 0px 0px, bottom right;
+		background-repeat: no-repeat, no-repeat;
+	}
+}
